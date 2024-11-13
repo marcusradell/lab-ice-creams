@@ -1,5 +1,15 @@
+function createIceCreamService() {
+  return {
+    async getAll() {
+      return [];
+    },
+  };
+}
+
+const iceCreamService = createIceCreamService();
+
 export default async function Home() {
-  const iceCreams = await [];
+  const iceCreams = await iceCreamService.getAll();
 
   return (
     <>
