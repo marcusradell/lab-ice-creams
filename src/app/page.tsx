@@ -1,12 +1,4 @@
-function createIceCreamService() {
-  return {
-    async getAll() {
-      return [];
-    },
-  };
-}
-
-const iceCreamService = createIceCreamService();
+import { iceCreamService } from "@/services/ice-creams/instance";
 
 export default async function Home() {
   const iceCreams = await iceCreamService.getAll();
